@@ -1,0 +1,8 @@
+#/a/b/c
+version: "3"
+services:
+  nginx:
+    image: nginx
+ 
+    
+   

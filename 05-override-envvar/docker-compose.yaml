@@ -1,0 +1,8 @@
+version: "3"
+services:
+  squares:
+    image: rashmi355/squares
+    environment: 
+    #- NUMBER= ${NUM}
+    #- NUMBER= ${NUM:-7} #it is not minus 7 its colon 7 , is the default valueif no args is passed
+    - NUMBER

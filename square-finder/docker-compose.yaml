@@ -1,0 +1,6 @@
+version: "3"
+services:
+  squares:
+    image: rashmi355/squares
+    environment: 
+    - NUMBER=6
