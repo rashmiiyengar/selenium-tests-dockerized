@@ -1,0 +1,20 @@
+version: "3"
+services:
+  vendor-portal:
+    image: rashmisoundar/selenium
+    environment:
+    - BROWSER=${BROWSER}
+    - HUB_HOST=hub
+    - THREAD_COUNT=3
+    - TEST_SUITE=vendor-portol.xml
+    volumes:
+    - ./output/vendor-portol:/home/selenium-docker/test-output 
+  flight-reservation:
+    image: rashmisoundar/selenium
+    environment:
+    - BROWSER=${BROWSER}
+    - HUB_HOST=hub
+    - THREAD_COUNT=4
+    - TEST_SUITE=flight-reservation.xml
+    volumes:
+    - ./output/flight-reservation:/home/selenium-docker/test-output     
